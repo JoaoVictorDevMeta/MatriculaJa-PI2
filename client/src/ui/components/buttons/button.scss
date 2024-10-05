@@ -1,0 +1,35 @@
+.matricula-button{
+  height: 60px;
+  min-width: 230px;
+  padding: 10px 50px;
+  border-radius: 200px;
+  font-size: 20px;
+  font-family: var(--montserrat);
+  background: white;
+  color: black;
+  border: 2px solid black;
+
+  &:hover{
+    opacity: 0.6;
+  }
+}
+
+.button-primary{
+  background:var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+.button-secondary{
+  background:var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+.button-complementary{
+  background:var(--complementary-color);
+  border: 2px solid var(--complementary-color);
+}
+.button-sample{
+  color:white;
+  &:active{
+    background: white;
+    color: black;
+  }
+}

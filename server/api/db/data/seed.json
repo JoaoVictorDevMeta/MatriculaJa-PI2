@@ -1,0 +1,301 @@
+{
+  "perfils": [
+    {
+      "nome_perfil": "Admin"
+    },
+    {
+      "nome_perfil": "Aluno"
+    },
+    {
+      "nome_perfil": "Escola"
+    },
+    {
+      "nome_perfil": "Gestor"
+    }
+  ],
+  "usuarios": [
+    {
+      "nome_usuario": "Joao Victor",
+      "email": "joaovictorgouveiar@gmail.com",
+      "senha": "123456",
+      "perfil": "Admin"
+    },
+    {
+      "nome_usuario": "Gustavo",
+      "email": "gustavo@gmail.com",
+      "senha": "123456",
+      "perfil": "Aluno"
+    },
+    {
+      "nome_usuario": "Escola - EEBAS",
+      "email": "eebasInstituto@gov.br",
+      "senha": "123456",
+      "perfil": "Escola"
+    },
+    {
+      "nome_usuario": "Endrel Daniel",
+      "email": "endrelDaniel@hotmail.com",
+      "senha": "123456",
+      "perfil": "Gestor"
+    }
+  ],
+  "escolas": [
+    {
+      "nome_escola": "EEBAS",
+      "endereco": "Av. Gen. Osório 415, sl. 506, João Pessoa, PB, 58010-780",
+      "telefone": "(83) 3221-0000",
+      "email": "eebasInstituto@gov.br"
+    }
+  ],
+  "turmas": [
+    {
+      "nome_turma": "1º Ano",
+      "turno": "Manhã",
+      "escola": "EEBAS"
+    },
+    {
+      "nome_turma": "2º Ano",
+      "turno": "Tarde",
+      "escola": "EEBAS"
+    },
+    {
+      "nome_turma": "3º Ano",
+      "turno": "Noite",
+      "escola": "EEBAS"
+    }
+  ],
+  "configuracoes": [
+    {
+      "servico_email": "smtp.example.com",
+      "usuario_servico_email": "user@example.com",
+      "senha_servico_email": "password",
+      "url_prematricula": "http://example.com/prematricula",
+      "url_matricula": "http://example.com/matricula",
+      "calendario_datas": "2023-01-01",
+      "ativo": true
+    }
+  ],
+  "categoriaAlertas": [
+    {
+      "nome_categoria": "Observação"
+    },
+    {
+      "nome_categoria": "Sistema"
+    },
+    {
+      "nome_categoria": "Matrícula"
+    },
+    {
+      "nome_categoria": "Importante"
+    }
+  ],
+  "alertas": [
+    {
+      "titulo": "Observação Alerta",
+      "descricao": "Este é um alerta de observação.",
+      "categoria": "Observação",
+      "target_group": "TODOS",
+      "datahora_envio": "2023-04-20T10:00:00"
+    },
+    {
+      "titulo": "Atualização do sistema",
+      "descricao": "Estamos enviando este aviso para informar que o sistema foi atualizado para versão 1.9.1.1 que corresponde a 54º do aplicativo. entre as ressalvas destacamos: .......",
+      "categoria": "Sistema",
+      "target_group": "TODOS",
+      "datahora_envio": "2023-04-21T11:00:00"
+    },
+    {
+      "titulo": "Requisito de Documentação",
+      "descricao": "Este é um alerta de observação.",
+      "categoria": "Matrícula",
+      "target_group": "ALUNOS",
+      "datahora_envio": "2023-04-22T09:30:00"
+    },
+    {
+      "titulo": "Acesso ao portal",
+      "descricao": "O acesso ao portal será interrompido para manutenção no dia 30/04 das 02:00 às 06:00.",
+      "categoria": "Sistema",
+      "target_group": "TODOS",
+      "datahora_envio": "2023-04-23T14:00:00"
+    },
+    {
+      "titulo": "Resultado da seleção",
+      "descricao": "Hoje vai ser divulgado o resultado da seleção para mátricula",
+      "categoria": "Importante",
+      "target_group": "ALUNOS",
+      "datahora_envio": "2023-04-24T08:00:00"
+    },
+    {
+      "titulo": "Configuração",
+      "descricao": "Este é um alerta de observação.",
+      "categoria": "Observação",
+      "target_group": "ESCOLAS",
+      "datahora_envio": "2023-04-25T10:15:00"
+    },
+    {
+      "titulo": "Manutenção programada",
+      "descricao": "Informamos que haverá uma manutenção programada no sistema no dia 22/04. O sistema ficará indisponível das 00:00 às 04:00.",
+      "categoria": "Sistema",
+      "target_group": "TODOS",
+      "datahora_envio": "2023-04-26T12:00:00"
+    },
+    {
+      "titulo": "Prazo final para matrícula",
+      "descricao": "Lembramos que o prazo final para matrícula é dia 23/04. Não perca o prazo!",
+      "categoria": "Matrícula",
+      "target_group": "ALUNOS",
+      "datahora_envio": "2023-04-27T16:00:00"
+    },
+    {
+      "categoria": "Observação",
+      "target_group": "ESCOLAS",
+      "titulo": "Revisão de documentos",
+      "descricao": "Solicitamos que todas as escolas revisem os documentos enviados até o dia 24/04.",
+      "datahora_envio": "2023-04-28T09:00:00"
+    },
+    {
+      "categoria": "Sistema",
+      "target_group": "ALUNOS",
+      "titulo": "Nova funcionalidade",
+      "descricao": "Uma nova funcionalidade foi adicionada ao sistema. Confira as novidades na seção de ajuda.",
+      "datahora_envio": "2023-04-29T11:30:00"
+    },
+    {
+      "categoria": "Importante",
+      "target_group": "ALUNOS",
+      "titulo": "Atualização de segurança",
+      "descricao": "Uma atualização de segurança foi aplicada ao sistema. Recomendamos que todos os alunos atualizem suas senhas.",
+      "datahora_envio": "2023-04-30T13:00:00"
+    },
+    {
+      "categoria": "Sistema",
+      "target_group": "TODOS",
+      "titulo": "Backup do sistema",
+      "descricao": "Um backup do sistema será realizado no dia 27/04. O sistema poderá ficar lento durante o processo.",
+      "datahora_envio": "2023-05-01T15:00:00"
+    },
+    {
+      "categoria": "Matrícula",
+      "target_group": "ALUNOS",
+      "titulo": "Documentação pendente",
+      "descricao": "Verifique se há alguma documentação pendente para sua matrícula. O prazo final é dia 28/04.",
+      "datahora_envio": "2023-05-02T10:00:00"
+    },
+    {
+      "categoria": "Observação",
+      "target_group": "ESCOLAS",
+      "titulo": "Relatório de desempenho",
+      "descricao": "O relatório de desempenho das escolas será disponibilizado no dia 29/04.",
+      "datahora_envio": "2023-05-03T14:00:00"
+    },
+    {
+      "categoria": "Sistema",
+      "target_group": "ALUNOS",
+      "titulo": "Acesso ao portal",
+      "descricao": "O acesso ao portal será interrompido para manutenção no dia 30/04 das 02:00 às 06:00.",
+      "datahora_envio": "2023-05-04T08:00:00"
+    },
+    {
+      "categoria": "Importante",
+      "target_group": "ALUNOS",
+      "titulo": "Feriado",
+      "descricao": "Informamos que no dia 01/05 não haverá expediente devido ao feriado do Dia do Trabalhador.",
+      "datahora_envio": "2023-05-05T09:00:00"
+    },
+    {
+      "categoria": "Sistema",
+      "target_group": "TODOS",
+      "titulo": "Atualização de software",
+      "descricao": "Uma atualização de software será aplicada no dia 02/05. O sistema poderá ficar indisponível por alguns minutos.",
+      "datahora_envio": "2023-05-06T11:00:00"
+    },
+    {
+      "categoria": "Matrícula",
+      "target_group": "ALUNOS",
+      "titulo": "Confirmação de matrícula",
+      "descricao": "Lembramos que a confirmação de matrícula deve ser feita até o dia 03/05.",
+      "datahora_envio": "2023-05-07T13:00:00"
+    },
+    {
+      "categoria": "Observação",
+      "target_group": "ESCOLAS",
+      "titulo": "Reunião de diretores",
+      "descricao": "Haverá uma reunião de diretores no dia 04/05 para discutir as novas diretrizes do sistema.",
+      "datahora_envio": "2023-05-08T15:00:00"
+    },
+    {
+      "categoria": "Sistema",
+      "target_group": "ALUNOS",
+      "titulo": "Nova interface",
+      "descricao": "Uma nova interface foi implementada no sistema. Confira as mudanças na seção de ajuda.",
+      "datahora_envio": "2023-05-09T10:00:00"
+    },
+    {
+      "categoria": "Importante",
+      "target_group": "ALUNOS",
+      "titulo": "Atualização de perfil",
+      "descricao": "Recomendamos que todos os alunos atualizem seus perfis no sistema até o dia 06/05.",
+      "datahora_envio": "2023-05-10T12:00:00"
+    },
+    {
+      "categoria": "Sistema",
+      "target_group": "TODOS",
+      "titulo": "Manutenção emergencial",
+      "descricao": "Uma manutenção emergencial será realizada no dia 07/05. O sistema poderá ficar indisponível por algumas horas.",
+      "datahora_envio": "2023-05-11T14:00:00"
+    },
+    {
+      "categoria": "Matrícula",
+      "target_group": "ALUNOS",
+      "titulo": "Envio de documentos",
+      "descricao": "Lembramos que o envio de documentos para matrícula deve ser feito até o dia 08/05.",
+      "datahora_envio": "2023-05-12T16:00:00"
+    }
+  ],
+  "respostasComunicacao": [
+    {
+      "resposta": "Esta é uma resposta de comunicação."
+    }
+  ],
+  "comunicacaoSites": [
+    {
+      "email_contato": "joaovictorgouveiar@gmail.com",
+      "descricao": "Olá, gostaria de saber como faço para me cadastrar no sistema.",
+      "tipo": "Dúvida"
+    },
+    {
+      "email_contato": "maria.silva@example.com",
+      "descricao": "Seria ótimo se o sistema tivesse uma opção de recuperação de senha.",
+      "tipo": "Sugestão"
+    },
+    {
+      "email_contato": "pedro.almeida@example.com",
+      "descricao": "Estou enfrentando problemas ao tentar acessar minha conta.",
+      "tipo": "Problema"
+    },
+    {
+      "email_contato": "ana.oliveira@example.com",
+      "descricao": "Como posso alterar meu endereço de e-mail cadastrado?",
+      "tipo": "Dúvida"
+    },
+    {
+      "email_contato": "joaovictorgouveiar@gmail.com",
+      "descricao": "Não estou recebendo confirmação da situação da matrícula, o que posso fazer?",
+      "tipo": "Matrícula"
+    }
+  ],
+  "tipoComunicacoes": [
+    {
+      "nome_comunicacao": "Dúvida"
+    },
+    {
+      "nome_comunicacao": "Sugestão"
+    },
+    {
+      "nome_comunicacao": "Problema"
+    },
+    {
+      "nome_comunicacao": "Matrícula"
+    }
+  ]
+}

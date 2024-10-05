@@ -1,0 +1,37 @@
+footer{
+  //height: 40vh;
+  background: var(--primary-color);
+  min-height: 300px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  p{
+    font-size: 20px;
+    color: white;
+  }
+
+  .info-footer{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{width: 150px; }
+  }
+
+  ul{
+    width: calc(100% - 500px);
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 1200px){
+    flex-direction: column;
+    ul{
+      width: 100%; 
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@baseUrl = http://localhost:3000
+@alertId = def96f8c-792f-4e24-8fe6-6bb0652c937d
+@categoryId = 7dbcebbc-52cc-4500-8e7b-e2aea99925ac
+
+### server test
+GET {{baseUrl}}/
+
+### all alerts
+GET {{baseUrl}}/api/alertas/all/e22c247e-7ea0-4721-bf83-ff58644961df/Admin
+
+### single alert
+GET {{baseUrl}}/api/alertas/{{alertId}}
+
+### create alert
+POST {{baseUrl}}/api/alertas
+Content-Type: application/json
+
+{
+    "id_categoria_alerta_fk": "{{categoryId}}",
+    "titulo": "Alerta de teste",
+    "descricao": "Descrição do alerta de teste",
+    "data_criacao": "2023-10-01T12:00:00Z"  // Include the creation date
+}
+
+### update alert
+PUT {{baseUrl}}/api/alertas/{{alertId}}
+Content-Type: application/json
+
+{
+    "id_categoria_alerta_fk": "{{categoryId}}",
+    "titulo": "Alerta de teste atualizado",
+    "descricao": "Descrição do alerta de teste atualizado"
+}
+
+### delete alert
+DELETE {{baseUrl}}/api/alertas/{{alertId}}
+
+###login user
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "joaovictorgouveiar@gmail.com",
+    "password": "123456" 
+}
+
+### all ComunicacaoSite
+GET {{baseUrl}}/api/monitoramento/all
+
+### responder comunicacao
+POST {{baseUrl}}/api/monitoramento/93beb80c-8c7b-4446-8fa1-757959793905/5ab64435-0b12-4f37-86ab-f9409a871a05
+Content-Type: application/json
+
+{
+    "resposta": "Resposta de teste",
+    "subtitulo": "Joi.string().required()",
+    "contactName": "Joi.string().required()",
+    "contactEmail": "joaovictorgouveiar@gmail.com"
+}
